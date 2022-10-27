@@ -37,6 +37,7 @@ public class CustomerController {
 
     @GetMapping(value = "/customer/{firstName}/all")
     public List<Customer> getCustomersByFirstName(@PathVariable String firstName){
+        System.out.println("Hello Git Hub");
         return customerRepository.getCustomersByFirstName(firstName);
     }
 
